@@ -1,0 +1,15 @@
+---
+title: "MAP assignement"
+author: "amine"
+date: "18 décembre 2017"
+output: html_document
+---
+
+```{r, echo=F, warning=F, message=F}
+#load leaflet package for R
+library(leaflet)
+m <- leaflet()
+m <- addTiles(m)
+m <- addMarkers(m, lng=-62.0676400, lat= 16.9959700, popup="Home sweet home")
+m
+```
